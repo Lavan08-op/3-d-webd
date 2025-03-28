@@ -1,6 +1,23 @@
 body {
   padding: 3rem;
   /* background-image: linear-gradient(
+    to top,
+    #4fb576 0%,
+    #44c489 30%,
+    #28a9ae 46%,
+    #28a2b7 59%,
+    #4c7788 71%,
+    #6c4f63 86%,
+    #432c39 100%
+  ); */
+  background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+  /* background-color: #55efc4;
+  background-image: linear-gradient(315deg, #55efc4 0%, #000000 74%); */
+  /* b
+   */
+  /* background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%); */
+  /* background-image: linear-gradient(
     90deg,
     rgb(54, 9, 219, 1) 0%,
     rgb(122, 44, 90) 24%,
@@ -18,8 +35,8 @@ body {
   background-image: linear-gradient(315deg, #000000 0%, #958e69 74%); */
   /* background-color: #ffeaa7;
 background-image: linear-gradient(315deg, #ffeaa7 0%, #000000 74%); */
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #958e69 74%);
+  /* background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #958e69 74%); */
   /* background: linear-gradient(
     90deg,
     rgba(29, 40, 41, 1) 0%,
@@ -80,7 +97,10 @@ header {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 1px;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  /* background-image: linear-gradient(315deg, #000000 0%, #414141 74%); */
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background-image: linear-gradient(to right, #868f96 0%, #596164 100%); */
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   /* background-image: linear-gradient(
     90deg,
     rgb(108, 150, 32) 0%,
@@ -93,12 +113,13 @@ header {
   ); */
   color: transparent;
   background-clip: text;
-  z-index: -1;
 }
+
 .head:hover {
   transform: scale(1.1);
   transition: 1.5s ease-out;
 }
+
 .contact {
   padding: 0.5rem 2rem;
   font-size: 1rem;
@@ -151,9 +172,11 @@ main {
 }
 .title h1 {
   text-align: center;
-  background-color: #f8de7e;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-
+  /* background-color: #f8de7e;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%); */
+  /* 
+   */
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   /* background-image: linear-gradient(315deg, #f8de7e 0%, #1fcecb 74%); */
   /* background-image: linear-gradient(
     90deg,
@@ -171,6 +194,18 @@ main {
   letter-spacing: 5px;
   font-weight: 600;
 }
+main h2 {
+  text-align: center;
+  background-color: #f8de7e;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  color: transparent;
+  background-clip: text;
+  font-size: 8rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+  display: none;
+}
+
 .location {
   margin-top: 2rem;
   display: flex;
@@ -178,7 +213,9 @@ main {
 }
 .location p {
   font-size: 2rem;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  /* background-image: linear-gradient(315deg, #000000 0%, #414141 74%); */
+  /* background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%); */
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   /* background-image: linear-gradient(
     90deg,
     rgb(54, 9, 219, 1) 0%,
@@ -197,7 +234,7 @@ main {
   position: absolute;
   top: 40%;
   height: 98%;
-  width: 1000px;
+  width: 987px;
   margin-left: 26px;
   padding-right: -13px;
 }
@@ -237,7 +274,7 @@ main {
   border-left: transparent;
 
   bottom: 20%;
-  height: 15rem;
+  height: 10rem;
 }
 
 .scroll-down::after {
@@ -253,7 +290,7 @@ main {
 
   transform: translate(-50% 10%) rotate(45deg);
 
-  animation: scroll-down 3s ease-in-out infinite;
+  animation: scroll-down 2.5s ease-in-out infinite;
 
   border: 2px solid gray;
 
@@ -267,8 +304,75 @@ main {
 }
 
 .scroll-down::before {
-  top: 6%;
-  animation-delay: 0.8;
+  top: 8%;
+  animation-delay: 1.4s;
+  content: "";
+  left: 23%;
+
+  height: 14px;
+
+  width: 11px;
+
+  position: absolute;
+
+  transform: translate(-50% 10%) rotate(45deg);
+
+  animation: scroll-down 1.8s ease-in-out infinite;
+
+  border: 2px solid gray;
+
+  border-top: transparent;
+
+  border-left: transparent;
+}
+::before {
+  transform: translate(50%, 10%) rotate(45deg);
+}
+.scroll-down2 {
+  content: "";
+  left: 90%;
+  /* height: 5rem; */
+  width: 3rem;
+  position: absolute;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 10px rgb(165, 53, 53);
+
+  border-radius: 10px;
+
+  border: 2px solid gray;
+
+  transform: translate(50%, -20px);
+
+  border-top: transparent;
+
+  border-left: transparent;
+
+  bottom: 20%;
+  height: 10rem;
+}
+.scroll-down2::after {
+  content: "";
+  top: 1%;
+  animation-delay: 0.7s;
+  left: 23%;
+
+  height: 14px;
+
+  width: 11px;
+
+  position: absolute;
+
+  transform: translate(-50% 10%) rotate(45deg);
+
+  animation: scroll-down 2s ease-in-out infinite;
+
+  border: 2px solid gray;
+
+  border-top: transparent;
+
+  border-left: transparent;
 }
 
 @keyframes scroll-down {
@@ -283,5 +387,91 @@ main {
   100% {
     opacity: 1;
     top: 90%;
+  }
+}
+
+@media (max-width: 1400px) {
+  main h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 768px) {
+  main h1 {
+    display: none;
+  }
+  main h2 {
+    display: block;
+    margin-top: -1rem;
+    font-size: 8rem;
+  }
+  .about {
+    margin-bottom: 2rem;
+  }
+  .info {
+    font-size: 1.5rem;
+    max-width: 15rem;
+    /* background-image: black; */
+    color: rgb(142, 168, 93);
+    /*  */
+  }
+  .planet {
+    width: 709px;
+    height: 629px;
+  }
+  .contact {
+    margin-right: -7rem;
+  }
+  .location p {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  main h2 {
+    display: block;
+    font-size: 10rem;
+  }
+  main h1 {
+    display: none;
+  }
+  .planet {
+    padding-bottom: 6rem;
+  }
+  .location p {
+    font-size: 3rem;
+  }
+  .contact {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    width: 515px;
+  }
+  body {
+    padding: 1rem;
+    width: 513px;
+    height: 1130px;
+  }
+  main h2 {
+    font-size: 6rem;
+  }
+  .planet {
+    width: 480px;
+  }
+  .location p {
+    font-size: 2.5rem;
+    margin-top: -1rem;
+  }
+  .info {
+    padding-bottom: 2rem;
+    padding-left: 6%;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .scroll-down {
+    left: 97%;
+    bottom: 37%;
   }
 }
