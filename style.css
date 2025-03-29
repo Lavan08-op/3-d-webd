@@ -196,8 +196,8 @@ main {
 }
 main h2 {
   text-align: center;
-  background-color: #f8de7e;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  /* background-color: #f8de7e; */
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   color: transparent;
   background-clip: text;
   font-size: 8rem;
@@ -471,6 +471,10 @@ main h2 {
     font-weight: 600;
   }
   .scroll-down {
+    left: 97%;
+    bottom: 37%;
+  }
+  .scroll-down2 {
     left: 97%;
     bottom: 37%;
   }
