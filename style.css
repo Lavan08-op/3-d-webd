@@ -228,7 +228,7 @@ main h2 {
   ); */
   color: transparent;
   background-clip: text;
-  font-weight: 750;
+  font-weight: 850;
 }
 .planet {
   position: absolute;
@@ -465,7 +465,7 @@ main h2 {
     margin-top: -1rem;
   }
   .info {
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     padding-left: 6%;
     font-size: 1.6rem;
     font-weight: 600;
@@ -477,5 +477,33 @@ main h2 {
   .scroll-down2 {
     left: 97%;
     bottom: 37%;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    width: 516px;
+  }
+  body {
+    padding: 1rem;
+    width: 513px;
+    height: 1120px;
+  }
+  .planet {
+    width: 460px;
+    padding-left: 1rem;
+  }
+  .info {
+    bottom: -11rem;
+    /* margin-bottom: -12rem; */
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 850;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    color: transparent;
+    background-clip: text;
+  }
+  .location p {
+    margin-left: 13px;
+    font-weight: 850;
   }
 }
